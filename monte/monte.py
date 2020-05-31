@@ -25,7 +25,17 @@ def get_min_word_length():
             'What minimum word length do you want? [4-16] ')
         try:
             min_word_length = int(min_word_length)
-            if 4 <= min_word_length <= 16:                 return min_word_length             else:                 print('{0} is not between 4 and 16'.format(min_word_length))         except ValueError:             print('{0} is not an integer between 4 and 16'.format(                 min_word_length)) 
+            if 4 <= min_word_length <= 16:                 
+
+        return min_word_length            
+
+        else:                 
+
+            print('{0} is not between 4 and 16'.format(min_word_length))         
+
+        except ValueError:             
+
+            print('{0} is not an integer between 4 and 16'.format(min_word_length)) 
             
 def get_display_word(word, idxs):     """Get the word suitable for display."""     if len(word) != len(idxs):         
     
